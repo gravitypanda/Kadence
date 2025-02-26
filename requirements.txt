@@ -2,8 +2,8 @@ streamlit==1.32.0
 pandas==2.2.1
 python-dotenv==1.0.1
 pydantic==2.6.3
-faker==24.2.0  # For generating sample data
-numpy==1.26.4  # For numerical computations
-streamlit-option-menu==0.3.12  # For navigation menu
+faker==24.2.0
+numpy==1.26.4
+streamlit-option-menu==0.3.12
+plotly==5.19.0
 streamlit-custom-calendar==0.1.2  # For calendar view 
-plotly==5.19.0  # For interactive visualizations 
