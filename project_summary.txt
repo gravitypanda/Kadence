@@ -1,0 +1,50 @@
+# Meetkadence Codebase Summary
+
+## Project Overview
+
+Meetkadence is a "reverse CRM" application designed to help users nurture valuable relationships through AI-enhanced email suggestions. Rather than requiring users to manage a traditional CRM, it pushes suggested outreach messages directly to their inbox based on customizable cadences and categories.
+
+## Project Structure
+
+The project follows this structure:
+- `app.py`: Main Streamlit application with dashboard interface
+- `pages/`: Directory containing pages for contacts, categories, and settings 
+- `models/`: Contains data schemas using Pydantic
+- `utils/`: Helper functions and sample data generation
+- `requirements.txt`: Dependencies including Streamlit, pandas, python-dotenv, pydantic, and faker
+- `README.md`: Project documentation
+
+## Key Features
+
+The application provides:
+1. A dashboard with metrics on contacts and upcoming outreach
+2. Contact management with cadence settings and categorization
+3. Category management with precedence ordering and AI instructions
+4. System settings for email configuration and AI prompt customization
+
+## Data Models
+
+The system uses Pydantic models:
+- `Contact`: Stores contact information, categories, cadence frequency, and personal instructions
+- `Category`: Defines categories with description, rule text, and precedence order
+- `CadenceFrequency`: Enum for weekly/monthly/quarterly/custom scheduling
+- `SystemSettings`: System configuration for email and AI settings
+
+## UI Implementation
+
+The UI uses a sidebar for navigation with custom CSS styling to create a clean, modern look. The dashboard displays metrics using card-style components, and data is presented in expandable sections and tables.
+
+## Current State
+
+The application is currently a prototype focusing on UX/UI demonstration. It's functional but uses sample data rather than a database backend. Core functionality like email integration and LLM integration are simulated for demonstration purposes.
+
+## Future Development Potential
+
+Potential areas for enhancement:
+- Database integration for persistent storage
+- Email service integration for sending/receiving messages
+- LLM integration for generating personalized messages
+- User authentication and multi-user support
+- Mobile responsiveness improvements
+- Data import/export functionality
+- Analytics and reporting features 

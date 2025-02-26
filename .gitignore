@@ -1,0 +1,32 @@
+# Virtual Environment
+venv/
+venv_new/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+
+# Environment variables
+.env
+
+# Backup files
+backups/
+old_app_files/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Local development
+*.log
+.streamlit/ 
